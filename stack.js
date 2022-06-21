@@ -11,9 +11,11 @@ class stack{
     }
     peek(){
         console.log(this.array[this.array.length -1])
+        if (this.array.length == 0) {console.log("empty stack")}
     }
     remove(){
-        this.array.pop()
+        if (this.array.length == 0) {console.log("cant remove any more elements as the stack is already emptty")}
+        else(this.array.pop())
     }
 }
 

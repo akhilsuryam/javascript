@@ -32,8 +32,9 @@ class Queue{
         console.log(this.last); 
     }
     dequeue(){
-        this.first = this.first.next
-        this.length--;
+        if(this.length==0){console.log("the queue is already empty")}
+        else this.first = this.first.next
+             this.length--;
     }
 }
 
